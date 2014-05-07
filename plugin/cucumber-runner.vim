@@ -49,7 +49,7 @@ function! RunLastFeature()
 endfunction
 
 function! InFeatureFile()
-  return match(expand("%"), "_feature.rb$") != -1
+  return match(expand("%"), ".feature$") != -1
 endfunction
 
 function! SetLastFeatureCommand(feature)
